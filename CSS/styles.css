@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
  /*Основные шрифты*/
 --main-font: Roboto, sans-serif;
@@ -15,7 +21,19 @@
 /*Цвет кнопок*/
 --activ-btn: #188CE8;
 }
+h1, h2, h3, h4, h5, p, ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+}
 body {
     color: var(--main-color);
     background-color: var(--main-background);
@@ -39,15 +57,33 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;}
+.n-l-l {
+    margin-right: 93px;
+    /*margin-left: 15px;*/
+}
 .nav-logo-link {
     color: var(--bleak-text);}
 .footer-logo-link {
     color: var(--white-text);}
 .logo {
     color: var(--select-color)}
+.nav-item, .contact-item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: 50px;
+}
+.nav-item:last-child, .contact-item:last-child {
+    margin-right: 0;
+}
+
 
 .team {
     background-color: var(--section-background);
+}
+.list {
+    padding-left: 0;
+    /*margin: 0;
+    padding: 0;*/
 }
 .link {
     text-decoration: none;}
@@ -62,8 +98,13 @@ letter-spacing: 0.02em;
 color: var(--main-grey);
 }
 .contact-link {
+    /*padding-top: 32px;
+    padding-bottom: 32px;*/
     font-weight: 500;
     color: var(--main-color);
+}
+.contact-link li {
+    outline: 2px solid turquoise;   
 }
 .nav-link:hover,
 .nav-link:focus, .contact-link:hover, .contact-link:focus {
@@ -71,6 +112,17 @@ color: var(--main-grey);
 }
 .link.current {
     color: var(--select-color);
+}
+.header-container, .nav-list, .header-contact {
+    display: flex;
+}
+.nav {
+    align-items: center;   
+}
+.general-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
          /*Герой*/
 
