@@ -134,7 +134,7 @@ color: var(--main-grey);
 height: 600px;
 left: 0px;
 top: 80px;*/
-position: absolute;
+/*position: absolute;*/
 text-align: center;
 padding-bottom: 94px;
 padding-top: 94px;
@@ -166,7 +166,10 @@ color: var(--white-text); }
     background-color: var(--activ-btn);
 }
        /*Особенности*/
-.peculiarities, .performance, .team {
+.peculiarities {
+    padding-top: 94px;   
+} 
+.performance, .team {
     padding-bottom: 94px;
     padding-top: 94px;   
 }
@@ -187,6 +190,9 @@ letter-spacing: 0.03em;
 color: var(--main-color);
 }
       /*Команда*/
+.team {
+background-color: var(--section-background);    
+}
 .team-list {
     width: 1600px;
     background-color: var(--section-background);
@@ -229,7 +235,6 @@ color: var(--main-grey);
 }
           /*Футер*/
 .footer {
-    background-color: var(--footer-background);
     position: absolute;
     /*width: 1600px;
     height: 252px;*/
