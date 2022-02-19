@@ -52,7 +52,9 @@ body {
     height: 80px;
     left: 0px;
     top: 0px;*/
-    background: var(--main-background);}
+    background: var(--main-background);
+    border: 1px solid #ECECEC;
+}
               /*Логотип*/
 .nav-logo-link, .footer-logo-link {
     font-family: var(--sacondary-font);
