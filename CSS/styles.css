@@ -330,11 +330,11 @@ color: var(--main-grey);
     background: #2196F3;
     border-color: #2196F3;}
 .project-item {
-    /*width: calc(100% - 2*30px/ 3);*/
-    margin-right: 30px;
+   /* width: calc(100% - 3*30px/3);*/
+    margin-right: 27px;
     /*margin-left: 15px;*/
     margin-bottom: 30px;
-    border-radius: ;
+    border: 1px solid #EEEEEE;
 }
 .project-item:nth-child(3n) {
     margin-right: 0;
@@ -343,8 +343,12 @@ color: var(--main-grey);
     margin-bottom: 0;
 }
 .project-list {
+    list-style: none;
     display: flex;
-       flex-wrap: wrap;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+    margin: 0;
+    padding: 0;
     }
 .project-title {
     font-family: var(--main-font);
