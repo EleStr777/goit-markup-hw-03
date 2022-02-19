@@ -207,6 +207,10 @@ color: var(--main-color);
     text-align: center;
 background-color: var(--section-background);    
 }
+.team-item {
+    border-radius: 0 0 4px 4px;
+    /*background-color: aqua;*/
+}
 .team-list {
     display: flex;
     /*width: 1600px;
@@ -325,6 +329,7 @@ color: var(--main-grey);
     margin-right: 30px;
     /*margin-left: 15px;*/
     margin-bottom: 30px;
+    border-radius: ;
 }
 .project-item:nth-child(3n) {
     margin-right: 0;
