@@ -248,7 +248,6 @@ color: var(--main-grey);
     margin-bottom: 30px;
     color: var(--main-color);
 }
-
 .performance-list {
     display: flex;
     width: calc(100% - 2*30px/ 3);  
