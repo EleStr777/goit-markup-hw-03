@@ -258,6 +258,9 @@ color: var(--main-grey);
     margin-bottom: 50px;
     text-align: center;
 }
+.performance-img, .team-img, .project-img {
+    display: block;
+}
 .performance-item
 .performance-title, .team-caption {
     font-family: var(--main-font);
