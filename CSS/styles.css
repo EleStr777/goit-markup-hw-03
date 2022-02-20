@@ -35,7 +35,7 @@ ul, ol {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    /*outline: 2px solid tomato;*/
+    outline: 2px solid tomato;
 }
 body {
     color: var(--main-color);
@@ -53,7 +53,12 @@ body {
     left: 0px;
     top: 0px;*/
     background: var(--main-background);
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+}
+.visually-hidden {
+    position: absolute;
+    visibility: hidden;
+   pointer-events: none;
 }
               /*Логотип*/
 .nav-logo-link, .footer-logo-link {
@@ -62,17 +67,18 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;}
-.n-l-l {
-    margin-right: 93px;
-    /*margin-left: 15px;*/
-}
+.nav-logo-link {
+    margin-right: 93px;    
+}   
+
 .nav-logo-link {
     color: var(--bleak-text);}
 .footer-logo-link {
     color: var(--white-text);}
 .logo {
     color: var(--select-color)}
-.nav-item, .contact-item {
+.nav-link, .contact-link {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     margin-right: 50px;
@@ -142,6 +148,9 @@ padding-bottom: 200px;
 padding-top: 200px;
 background: var(--footer-background);}
 .hero-title {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 font-family: var(--main-font);
 font-weight: 900;
 font-size: 44px;
@@ -171,8 +180,8 @@ color: var(--white-text); }
     border-color: var(--activ-btn);
 }
        /*Особенности*/
-.peculiarities {
-    padding-top: 94px;   
+.performance {
+    padding-bottom: 94px;   
 }
 .peculiarity-list {
     display: flex;
@@ -183,7 +192,7 @@ color: var(--white-text); }
 .peculiarity-item:not(:last-child) {
     margin-right: 30px;
 }
-.performance, .team {
+.team, .peculiarities {
     padding-bottom: 94px;
     padding-top: 94px;   
 }
