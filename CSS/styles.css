@@ -284,7 +284,13 @@ color: var(--main-grey);
 }
 .performance-title {
     margin-bottom: 50px;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
     text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-grey);
 }
 .performance-img, .team-img, .project-img {
     display: block;
