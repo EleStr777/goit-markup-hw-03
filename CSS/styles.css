@@ -295,8 +295,7 @@ color: var(--main-grey);
 .performance-img, .team-img, .project-img {
     display: block;
 }
-.performance-item
-.performance-title, .team-caption {
+.team-caption {
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 36px;
